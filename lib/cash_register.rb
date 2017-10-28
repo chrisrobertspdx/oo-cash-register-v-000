@@ -12,6 +12,3 @@ class CashRegister
   end
 
 end
-
-
-
