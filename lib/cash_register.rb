@@ -31,4 +31,9 @@ class CashRegister
     self.all
   end
 
+  def void_last_transaction
+    self.total = self.total.to_f - (self.previous_price.to_f * self.previous_quantity.to_f)
+    self.total = self.total.to_i
+  end
+
 end
