@@ -2,7 +2,7 @@ class CashRegister
 
   attr_accessor :total, :discount
 
-  ITEMS = []
+  @@all = []
 
   def initialize(discount=0)
     @total = 0
@@ -19,6 +19,10 @@ class CashRegister
     end
     self.total = self.total.to_f - (self.total.to_f * (self.discount.to_f)/100)
     "After the discount, the total comes to $#{self.total.to_i}."
+  end
+
+  def items
+
   end
 
 end
