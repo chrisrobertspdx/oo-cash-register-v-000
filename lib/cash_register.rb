@@ -14,5 +14,4 @@ class CashRegister
 end
 
 
-cash_register = CashRegister.new.add_item("eggs", 0.98)
-puts cash_register.total
+
